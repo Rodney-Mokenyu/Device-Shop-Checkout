@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header class="checkout-header">
+                <h1>Checkout</h1>
+                <p>3 ITEMS</p>
+        </header>
+        <!-- Checkout Container -->
+        <div class="body">
+            <div class="checkout-container">
+                
+                <table>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <p class="image"><img src="Images/iphone.jpeg" alt="iPhone 12 Pro" class="product-img">
+                                </p>
+                                <div class="item-details">
+                                    <h2>iPhone 12 Pro</h2><br>
+                                    <p>Golden</p>
+                                </div>
+                                <div class="item-price">
+                                    <div>$999.00</div><br>
+                                    <button class="btn remove-item"><i class="fas fa-times"></i></button><br>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td                        <div class="item">
+                                <p class="image">
+                                <img src="Images/warch.jpeg" alt="Apple Watch" class="product-img"> </p>
+                                <div class="item-details">
+                                    <h2>Apple Watch</h2>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="item-price">
+                                    <div>$399.00</div><br>
+                                    <button class="btn remove-item"><i class="fas fa-times"></i></button><br>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <p class="image">
+                                <img src="Images/macbook.jpeg" alt="iMac" class="product-img">
+                            </p>
+                                <div class="item-details">
+                                    <h2>iMac</h2>
+                                    <p>Green</p>
+                                </div>
+                                <div class="item-price">
+                                    <div>$1199.00</div><br>
+                                    <button class="btn remove-item"><i class="fas fa-times"></i></button><br>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="coupon">
+                    <input type="text" placeholder="Enter coupon code">
+                    <button id="coupon">Apply coupon</button>
+                </div>
+                <div class="description">
+                    <dl>
+                        <dt>Sub total:</dt>
+                        <dd>$2597.00</dd>
+                        <dt>Tax:</dt>
+                        <dd>$623.28</dd>
+                        <dt>Total:</dt>
+                        <dd>$3220.08</dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact">
+                <h1>Contact information</h1>
+                <form action="post">
+                    <label for="FL_Name">First and Last Name</label>
+                    <input type="text" id="FL_Name" placeholder="Enter your name" name="name">
+                    <label for="Email">Email Address</label>
+                    <input type="text" placeholder="Enter email address" id="Email">
+                   <section class="country_details">
+                    <span class="country">
+                        <label for="Country">Country</label><br>
+                        <select id="Country" name="country">
+                            <option value="">Finland</option>
+                            <option value="Finland">Germany</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </span>
+                    <span class="postal-code">
+                        <label for="postal_code">Postal code</label><br>
+                        <input type="text" placeholder="00270">
+                    </span>
+                </section>
+
+                    <button type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
